@@ -9,7 +9,6 @@
   - É uma linguagem de programação interpretada
   - Permite criar aplicativo mobile, desktop, web, etc.
   - É usado no front-end e no back-end ([Nodejs](https://nodejs.org/en/))
-  01-testando
 
   ----------------------------------------------------
   ### ECMAScript + JavaScript
@@ -94,6 +93,12 @@
   > EX: 
   ![fetch](./02-variaveis/assets/13.png)
 
+   ----------------------------------------------------
+
+  ### Declaração de objetos?
+  > EX: 
+  ![fetch](./02-variaveis/assets/14.png)
+
 </details>
 
 <details>
@@ -153,7 +158,7 @@
     
 </details>
 <details>
-  <summary>4. Loop </summary>
+  <summary>5. Loop </summary>
   
   - O que são loops?
   > Loops são estruturas de repetição que permitem executar determinada ação várias vezes.
