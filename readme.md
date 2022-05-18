@@ -1,4 +1,4 @@
-![](./assets/hd-header.png)
+![](./hd-header.png)
 
 ## Front-End | Introdução a Programação
 
