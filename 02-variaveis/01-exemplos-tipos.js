@@ -26,8 +26,9 @@ function saudacaoSemParametro() {
     return 'Seja bem vindo!';
 }
 
-function saudacaoComParametro(nome) {
-    return 'Seja bem vindo ' + nome;
+//O valor atribuido a um parâmetro, é chamado de argumento
+function saudacaoComParametro(mensagem) {
+    return mensagem;
 }
 
 function imc(peso, altura) {

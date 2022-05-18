@@ -3,17 +3,31 @@
 ## Front-End | Introdução a Programação
 
 <details>
-  <summary>1. JavaScript</summary>
+  <summary>1. JavaScript + Ambiente</summary>
   
   ### O que é o JavaScript?
   - É uma linguagem de programação interpretada
   - Permite criar aplicativo mobile, desktop, web, etc.
-  - É usado no front-end e no back-end
-  
+  - É usado no front-end e no back-end ([Nodejs](https://nodejs.org/en/))
+  01-testando
+
+  ----------------------------------------------------
   ### ECMAScript + JavaScript
   - [ECMAScript](https://www.ecma-international.org) é uma versão da linguagem JavaScript
   - ECMAScript 2021 é a versão mais recente da linguagem
   - Desde 2015, é lançado uma versão todo ano  
+
+----------------------------------------------------
+
+  ### Temos 2 ambientes para executar o JS
+  - Console do [Developer Tools](https://developer.mozilla.org/pt-BR/docs/Tools) `Atalho F12`
+  > EX: 
+  ![fetch](./01-ambiente/assets/01.png)
+  ----------------------------------------------------
+  - Terminal do Sistema Operacional com [Nodejs](https://nodejs.org/docs/latest-v17.x/api/console.html#console)
+  > EX: 
+  ![fetch](./01-ambiente/assets/02.png)
+  
 </details>
 
 <details>
@@ -25,98 +39,164 @@
   ### Tipos básicos variáveis
   - String: texto
   > EX: 
-  ![fetch](./assets/01_variaveis.png)
+  ![fetch](./02-variaveis/assets/01.png)
+  ----------------------------------------------------
   - Number: números
   > EX: 
-  ![fetch](./assets/02_variaveis.png)
+  ![fetch](./02-variaveis/assets/02.png)
+  ----------------------------------------------------
   - Boolean: verdadeiro ou falso
   > EX: 
-  ![fetch](./assets/03_variaveis.png)
+  ![fetch](./02-variaveis/assets/03.png)
+  ----------------------------------------------------
   - Object: objeto
   > EX: 
-  ![fetch](./assets/04_variaveis.png)
+  ![fetch](./02-variaveis/assets/04.png)
+  ----------------------------------------------------
   - Array: lista
   > EX: 
-  ![fetch](./assets/05_variaveis.png)
+  ![fetch](./02-variaveis/assets/05.png)
+  ----------------------------------------------------
   - Function: função
   > EX: 
-  ![fetch](./assets/06_variaveis.png)
+  ![fetch](./02-variaveis/assets/06.png)
+  ----------------------------------------------------
   - Undefined: indefinido
   > EX: 
-  ![fetch](./assets/07_variaveis.png)
+  ![fetch](./02-variaveis/assets/07.png)
+  ----------------------------------------------------
   - Null: nulo
   > EX: 
-  ![fetch](./assets/08_variaveis.png)
+  ![fetch](./02-variaveis/assets/08.png)
+  ----------------------------------------------------
 
   ### Declaração de variáveis, var, let ou const?
   - var: variável global
   > EX: 
-  ![fetch](./assets/09_variaveis.png)
+  ![fetch](./02-variaveis/assets/09.png)
+  ----------------------------------------------------
   - const: constante de escopo local
   > EX: 
-  ![fetch](./assets/10_variaveis.png)
+  ![fetch](./02-variaveis/assets/10.png)
+  ----------------------------------------------------
   - let: variável de escopo local
   > EX: 
-  ![fetch](./assets/11_variaveis.png)
-</details>
+  ![fetch](./02-variaveis/assets/11.png)
+  ----------------------------------------------------
 
-<details>
-  <summary>3. Assincronismo </summary>
-  
-  - O que é assincronismo?
-  - É a capacidade da execução de um código, esperar o processamento de uma requisição realizada para uma API ou função, antes de continuar sua execução.
-
-  > EX:
-  Sync:
-  ![async](./assets/async_01.png)
-  Resultado:
-  ![async](./assets/async_01_result.png)
-
-  -----------------------------------------
-  Async:
-  ![async](./assets/async_02.png)
-  Resultado:
-  ![async](./assets/async_02_result.png)
-    
-</details>
-
-<details>
-  <summary>4. Fetch </summary>
-  
-  - O que é o fetch?
-  - O fetch provê ao navegador uma interface para a execução de requisições HTTP através de Promises.
-
-  > EX:
-  API via CEP pelo navegador:
-  ![fetch](./assets/fetch_01.png)
-  API via CEP pelo POSTMAN:
-  ![fetch](./assets/fetch_02.png)
-  -----------------------------------
-  Utilizando o fetch para obter dados de uma API:
-  ![fetch](./assets/fetch_03.png)
-  Resultado:
-  ![fetch](./assets/fetch_03_result.png)
-  ![Propagation](./assets/propagacao_5.png) 
-  Resultado: 
-  ![Propagation](./assets/propagacao_resultado_1.png)
-  ![Propagation](./assets/propagacao_resultado_2.png)
-    
-</details>
-
-<details>
-  <summary>5. Tratando erros </summary>
-  
-  - O que é um erro?
-  > É um evento que ocorre quando uma requisição é realizada e o servidor retorna um código de erro.
-
+  ### Declaração de arrays?
+  - O array é uma estrutura de dados que armazena vários valores em uma única variável.
   > EX: 
-  Coloquei um CEP errado e o servidor retornou um erro não tratado.
-  ![erro](./assets/fetch_04.png)
-  ------------------------------
-  Tratando o error:
-  ![erro](./assets/fetch_05.png)
-  Resultado:
-  ![erro](./assets/fetch_05_result.png)
+  ![fetch](./02-variaveis/assets/12.png)
+  ----------------------------------------------------
+
+  ### Declaração de funções?
+  > EX: 
+  ![fetch](./02-variaveis/assets/13.png)
+
 </details>
 
-###### tags: `Frontend` `nodeJS` `JavaScript`
+<details>
+  <summary>3. Operadores </summary>
+  
+  - O que são operadores?
+  > Os operadores são os símbolos que realizam operações matemáticas, lógicas e de comparação.
+
+  - Operadores aritméticos
+  > EX:
+  ![fetch](./03-operadores/assets/01.png)
+  ----------------------------------------------------
+  - Operadores atribuição
+  > EX:
+  ![fetch](./03-operadores/assets/02.png)
+  ----------------------------------------------------
+  - Operadores comparação
+  > EX:
+  ![fetch](./03-operadores/assets/03.png)
+  ----------------------------------------------------
+  - Operadores lógicos
+  > EX: 
+  ![fetch](./03-operadores/assets/04.png)  
+  ----------------------------------------------------  
+</details>
+
+<details>
+  <summary>4. Condicional </summary>
+  
+  - O que são condicionais?
+  > Condicionais são estruturas de decisão que permitem decidir se uma determinada ação deve ser executada ou não.
+
+  - if/else
+  > EX:
+  ![fetch](./04-condicional/assets/01.png)
+  ----------------------------------------------------
+  - if/else com variável
+  > EX:
+  ![fetch](./04-condicional/assets/02.png)
+  ----------------------------------------------------
+  - if/else com função
+  > EX:
+  ![fetch](./04-condicional/assets/03.png)
+  ----------------------------------------------------
+  - if/else if/else
+  > EX:
+  ![fetch](./04-condicional/assets/04.png)
+  ----------------------------------------------------
+  - ternário
+  > EX:
+  ![fetch](./04-condicional/assets/05.png)
+  ----------------------------------------------------
+  - switch
+  > EX:
+  ![fetch](./04-condicional/assets/06.png)
+  ----------------------------------------------------
+    
+</details>
+<details>
+  <summary>4. Loop </summary>
+  
+  - O que são loops?
+  > Loops são estruturas de repetição que permitem executar determinada ação várias vezes.
+
+  - for incremento, do 1 até 10
+  > EX:
+  ![fetch](./05-loop/assets/01.png)
+  ----------------------------------------------------
+  - for decremento, do 10 até 1
+  > EX:
+  ![fetch](./05-loop/assets/02.png)
+  ----------------------------------------------------
+  - for break, vai contar até 4
+  > EX:
+  ![fetch](./05-loop/assets/03.png)
+  ----------------------------------------------------
+  - for continue, vai contar até 4
+  > EX:
+  ![fetch](./05-loop/assets/04.png)
+  ----------------------------------------------------
+  - for com array 
+  > EX:
+  ![fetch](./05-loop/assets/05.png)
+  ----------------------------------------------------
+  - while incremento, do 1 até 10 
+  > EX:
+  ![fetch](./05-loop/assets/06.png)
+  ----------------------------------------------------
+  - while decremento, do 10 até 1
+  > EX:
+  ![fetch](./05-loop/assets/07.png)
+  ----------------------------------------------------
+  - do while incremento, do 1 até 10
+  > EX:
+  ![fetch](./05-loop/assets/08.png)
+  ----------------------------------------------------
+  - do while decremento, do 10 até 1
+  > EX:
+  ![fetch](./05-loop/assets/09.png)
+  ----------------------------------------------------
+  - array com while
+  > EX:
+  ![fetch](./05-loop/assets/10.png)    
+</details>
+
+###### tags: `Frontend` `nodeJS` `JavaScript` `variaveis` `condicional` `operadores` `loop`
