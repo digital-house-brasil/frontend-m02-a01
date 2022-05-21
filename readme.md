@@ -21,11 +21,11 @@
   ### Temos 2 ambientes para executar o JS
   - Console do [Developer Tools](https://developer.mozilla.org/pt-BR/docs/Tools) `Atalho F12`
    
-  ![fetch](./01-ambiente/assets/01.png)
+  ![fetch](./assets/01.png)
   ----------------------------------------------------
   - Terminal do Sistema Operacional com [Nodejs](https://nodejs.org/docs/latest-v17.x/api/console.html#console)
    
-  ![fetch](./01-ambiente/assets/02.png)
+  ![fetch](./assets/02.png)
   
 </details>
 
