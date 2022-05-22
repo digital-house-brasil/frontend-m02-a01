@@ -567,6 +567,64 @@
 
 </details>
 
+<details>
+  <summary>8. Tipos de funções </summary>
+
+  - Função `function`
+  
+  ```js
+  function soma(a, b) {
+    return a + b;
+  }
+  console.log(soma(1, 2)); // 3
+  ```
+  > OBS: No exemplo acima, a função `soma` recebe dois parâmetros, os argumentos passados são `a` e `b`, e o retorno é a soma dos dois.
+  ----------------------------------------------------
+
+  - Função `arrow function`
+  
+  ```js
+  const soma = (a, b) => {
+    return a + b;
+  }
+  console.log(soma(1, 2)); // 3
+  ```
+  > OBS: No exemplo acima, a função `soma` recebe dois parâmetros, os argumentos passados são `a` e `b`, e o retorno é a soma dos dois.
+  ----------------------------------------------------
+  - Função `arrow function` com retorno implícito
+  
+  ```js
+  const soma = (a, b) => a + b;
+  console.log(soma(1, 2)); // 3
+  ```
+  > OBS: No exemplo acima, a função `soma` recebe dois parâmetros, os argumentos passados são `a` e `b`, e o retorno é a soma dos dois. O `return` é implícito, pois só temos uma linha de código. 
+</details>
+
+<details>
+  <summary>9. Tipos de objetos </summary>
+
+  - Objeto [`Object`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object)
+    
+  ```js
+  const pessoa = {
+    nome: 'Pedro',
+    idade: 20
+  };
+  console.log(pessoa.nome); // Pedro
+  ```
+  > OBS: No exemplo acima, o objeto `pessoa` possui dois atributos, `nome` e `idade`, e o valor de `nome` é `Pedro`.
+  ----------------------------------------------------
+  - Objeto [`Array`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
+  
+  ```js
+  const pessoa = [
+    {'Pedro', 20},
+    {'João', 25},
+    {'Maria', 30}];
+  console.log(pessoa[0]); // {'Pedro', 20}
+  ```
+  > OBS: No exemplo acima, o objeto `pessoa` é um array de objetos, e o primeiro objeto possui dois atributos, `nome` e `idade`, e o valor de `nome` é `Pedro`.
+</details>
 
 
 ###### tags: `Frontend` `nodeJS` `JavaScript` `variaveis` `condicional` `operadores` `loop`
