@@ -54,15 +54,12 @@
   > Quando declaramos uma variável com palavra reservada `var`,  ela poderá ser acessada de qualquer lugar do código, pois ela é `elevada`[hoisting](https://developer.mozilla.org/pt-BR/docs/Glossary/Hoisting) para o topo do contexto do código de execução.
   
   ```js
-  function welcome() {    
-    console.log('Welcome ' + name); 
-  }
-  welcome();
+  console.log('Welcome ' + name); 
   var name = 'Sara';
   ```
 
-  > No exemplo acima, a variável `name` é elevada para o topo do contexto do código de execução, e logo após, a função `welcome` é executada.
-  > Porém o valor da variável `name` é `undefined`, pois ela não foi definida. Somente após a função `welcome` ser executada, o valor da variável `name` é definido.
+  > No exemplo acima, a variável `name` é elevada para o topo do contexto do código de execução, e logo após a execução do `console.log`, a variável `name` é acessada.
+  > Porém o valor da variável `name` é `undefined`, pois o seu valor ainda não foi definido. Somente após a o `console.log` ser executada, o valor da variável `name` é definido.
 
   ### Declarando variáveis com `const`
   > Quando declaramos uma variável com palavra reservada `const`, ela não poderá ser alterada, pois ela é `constante`.
@@ -90,14 +87,11 @@
 
   EX: 
   ```js
-  function welcome() {    
-    console.log('Welcome ' + name); // Erro!
-  }
-  welcome();
+  console.log('Welcome ' + name); // Erro!
   const name = 'Sara';
   ```
 
-  > No exemplo acima, a variável `name` não é elevada para o topo do contexto do código de execução, pois ela só foi declarada depois da função, sendo que o correto é declara a variável `name` antes da função. 
+  > No exemplo acima, a variável `name` não é elevada para o topo do contexto do código de execução, pois ela só foi declarada depois do `console.log`, sendo que o correto é declara a variável `name` antes do `console.log`, pois ela só pode ser acessada depois de ser declarada. 
 </details>
 
 <details>
