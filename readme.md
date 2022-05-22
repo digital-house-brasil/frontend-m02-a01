@@ -187,7 +187,7 @@
   - O que são operadores?
   > Os operadores são os símbolos que realizam operações matemáticas, lógicas e de comparação.
 
-  - Operadores aritméticos
+  - [Operadores aritméticos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
   
   ```js
   const x = 10;
@@ -200,7 +200,7 @@
   resultado = x % y; // 0
   ```
   ----------------------------------------------------
-  - Operadores atribuição
+  - [Operadores atribuição](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Atribui%C3%A7%C3%A3o)
     
   ```js
   let x = 10;
@@ -211,7 +211,7 @@
   x %= 2; // 0
   ``` 
   ----------------------------------------------------
-  - Operadores comparação
+  - [Operadores comparação](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
   
   ```js
   const x = 10;
@@ -225,7 +225,9 @@
   resultado = x != y; // true
   ```
   ----------------------------------------------------
-  - Operadores lógicos
+  - [Operadores lógicos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
+  
+  ```js
    
   ```js
   const x = 10;
@@ -243,7 +245,7 @@
   - O que são condicionais?
   > Condicionais são estruturas de decisão que permitem decidir se uma determinada ação deve ser executada ou não.
 
-  - if/else
+  - [if/else](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else)
   
   ```js
   const x = 10;
@@ -256,7 +258,7 @@
   }
   ```
   ----------------------------------------------------
-  - if/else if/else
+  - [if/else if/else](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else)
   
   ```js
   const x = 10;
@@ -271,7 +273,7 @@
   }
   ```
   ----------------------------------------------------
-  - ternário
+  - [ternário](https://pt.wikipedia.org/wiki/Operador_ternário)
   
   ```js
   const x = 10;
@@ -280,7 +282,7 @@
   resultado = x > y ? x : y; // Se x for maior que y, retorna x, senão retorna y
   ```
   ----------------------------------------------------
-  - switch
+  - [switch](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/switch)
   
   ```js
   const dia = 'segunda';
@@ -319,7 +321,7 @@
   - O que são loops?
   > Loops são estruturas de repetição que permitem executar determinada ação várias vezes.
 
-  - for
+  - [for](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for)
   
   ```js
   for (let i = 0; i < 10; i++) { // O for percorre todos os elementos do array
@@ -327,7 +329,7 @@
   }
   ```
 
-  - while
+  - [while](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/while)
   
   ```js
   let i = 0;
@@ -337,7 +339,7 @@
   }
   ```
 
-  - do while
+  - [do while](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/do...while)
   
   ```js
   let i = 0;
@@ -362,7 +364,7 @@
   console.log(lista[1]); // 2
   ```
 
-  - Pecorrendo elementos de um array com for
+  - Pecorrendo elementos de um array com [for](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -371,7 +373,7 @@
   }
   ```
 
-  - Pecorrendo elementos de um array com for...of
+  - Pecorrendo elementos de um array com [for...of](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for...of)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -379,7 +381,7 @@
     console.log(item);
   }
   ```
- - Pecorrendo elementos de um array com forEach
+ - Pecorrendo elementos de um array com [forEach](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -433,7 +435,7 @@
 <details>
   <summary>7. Métodos de array </summary>
 
-  - Método `.map`
+  - Método [`.map`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -444,7 +446,8 @@
   ```
   > OBS: No exemplo acima, a condinção é pega cada item é multiplicar por 2, retornando um novo array.
   ----------------------------------------------------
-  - Método `.filter`
+  - Método [`.filter`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
   ```js
   const lista = [1, 2, 3, 4, 5];
   const listaDois = lista.filter( (item) => { // item é uma variável temporária
@@ -454,7 +457,7 @@
   ```
   > OBS: No exemplo acima está filtrando os elementos pares, está pegando cada elemento e verificando se o resto é igual a 0, se for, retorna um novo array com elementos pares.
   ----------------------------------------------------
-  - Método `.reduce`
+  - Método [`.reduce`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -465,7 +468,7 @@
   ```
   > OBS: No exemplo acima, o `reduce` recebe dois parâmentros, o total é a variável que irá receber o valor do total e o item é a variável que irá receber cada item do array. O novo array é somando cada item com o total, retornando a soma total.
   ----------------------------------------------------
-  - Método `.find`
+  - Método [`.find`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -477,7 +480,7 @@
   > OBS: No exemplo acima, o `find` está verificando se o item é igual a 3, se for, retorna o item.
   ----------------------------------------------------
 
-  - Método `.some`
+  - Método [`.some`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -488,7 +491,7 @@
   ```
   > OBS: No exemplo acima, o `some` está verificando se algum item é par, se for, retorna true.
   ----------------------------------------------------
-  - Método `.every`
+  - Método [`.every`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -499,7 +502,7 @@
   ```
   > OBS: No exemplo acima, o `every` está verificando se todos os items são pares, se for, retorna true.
   ----------------------------------------------------
-  - Método `.sort`
+  - Método [`.sort`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
   
   ```js
   const lista = [5, 3, 1, 4, 2];
@@ -510,7 +513,7 @@
   ```
   > OBS: No exemplo acima, o `sort` está ordenando os elementos do array, retornando um novo array ordenado.
   ----------------------------------------------------
-  - Método `.reverse`
+  - Método [`.reverse`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)  
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -519,7 +522,7 @@
   ```
   > OBS: No exemplo acima, o `reverse` está inverte os elementos do array, retornando um novo array invertido.
   ----------------------------------------------------
-  - Método `.join`
+  - Método [`.join`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -528,7 +531,7 @@
   ```
   > OBS: No exemplo acima, o `join` está juntando os elementos do array, retornando uma string.
   ----------------------------------------------------
-  - Método `.toString`
+  - Método [`.toString`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/toString)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -537,7 +540,7 @@
   ```
   > OBS: No exemplo acima, o `toString` está transformando o array em string, retornando uma string.
   ----------------------------------------------------
-  - Método `.concat`
+  - Método [`.concat`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -547,7 +550,7 @@
   ```
   > OBS: No exemplo acima, o `concat` está concatenando dois arrays, retornando um novo array.
   ----------------------------------------------------
-  - Método `.slice`
+  - Método [`.slice`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -556,7 +559,7 @@
   ```
   > OBS: No exemplo acima, o `slice` está pegando dois parâmetros, o primeiro é o índice inicial e o segundo é o índice final, retornando um novo array.
   ----------------------------------------------------
-  - Método `.splice`
+  - Método [`.splice`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
   
   ```js
   const lista = [1, 2, 3, 4, 5];
@@ -570,7 +573,7 @@
 <details>
   <summary>8. Tipos de funções </summary>
 
-  - Função `function`
+  - Função [`function`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/function)
   
   ```js
   function soma(a, b) {
@@ -581,7 +584,7 @@
   > OBS: No exemplo acima, a função `soma` recebe dois parâmetros, os argumentos passados são `a` e `b`, e o retorno é a soma dos dois.
   ----------------------------------------------------
 
-  - Função `arrow function`
+  - Função [`arrow function`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
   
   ```js
   const soma = (a, b) => {
